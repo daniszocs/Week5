@@ -24,16 +24,14 @@ public class App
         persons.add(person4);
         persons.add(person5);
 
-        // Displaying the TreeSet
-        System.out.println("TreeSet: " + persons);
+        Iterator<Person> itr=persons.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next().name);
+        }
 
-        // Creating an iterator
-        Iterator value = persons.iterator();
-
-        // Displaying the values after iterating through the set
-        System.out.println("The iterator values are: ");
-        while (value.hasNext()) {
-            System.out.println(value.next());
+        Iterator<Person> itr=persons.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next().age);
         }
     }
 }
